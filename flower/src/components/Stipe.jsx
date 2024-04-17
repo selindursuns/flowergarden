@@ -112,5 +112,4 @@ const Stipe = () => {
 export default Stipe;
 //baseradius from 0.01 to 0.3
 //noise 0 to 0.5
-//height can be a cool parameter, from 2 to 8
-//
+//height can be a cool parameter, from 2 to
