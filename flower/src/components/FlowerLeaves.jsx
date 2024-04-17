@@ -16,7 +16,7 @@ const Leaf = ({ position, rotation }) => {
         depth: 0.2,
         bevelEnabled: true,
         bevelThickness: 0.4,
-        bevelSize: 0.3,
+        bevelSize: 0.9,
         bevelOffset: 0.1,
         bevelSegments: 30
     };

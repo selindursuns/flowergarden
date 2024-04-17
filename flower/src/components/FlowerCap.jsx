@@ -20,7 +20,7 @@ const CapPetal = ({ position, rotation, bevelThickness }) => {
         depth: 0.02,
         bevelEnabled: true,
         bevelThickness: 0.4,
-        bevelSize: 0.5,
+        bevelSize: 0.9,
         bevelOffset: 0,
         bevelSegments: 100
     };
