@@ -1,0 +1,31 @@
+*{
+  width: 100%;
+  height: 100;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+  color: white; 
+  font-family: Arial, sans-serif; 
+  display:flow-root;
+  justify-content: center;
+  align-items: center;
+}
+
+.CanvasContainer {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  animation: moveGroup 10s infinite alternate linear; /* Adjust duration and animation type as needed */
+}
+
+@keyframes moveGroup {
+  0% {
+    transform: translate(10, 0);
+  }
+  100% {
+    transform: translate(100px, 100px); /* Adjust distance and direction of movement */
+  }
+}
