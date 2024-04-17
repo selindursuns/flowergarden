@@ -15,8 +15,8 @@ const Leaf = ({ position, rotation }) => {
         steps: 2,
         depth: 0.2,
         bevelEnabled: true,
-        bevelThickness: 0.5,
-        bevelSize: 0.4,
+        bevelThickness: 0.4,
+        bevelSize: 0.3,
         bevelOffset: 0.1,
         bevelSegments: 30
     };
@@ -40,7 +40,7 @@ const Leaf = ({ position, rotation }) => {
     );
 };
 
-const FlowerLeaves = ({ numLeaves = 14 }) => {
+const FlowerLeaves = ({ numLeaves = 12 }) => {
     const leaves = useMemo(() => {
         return Array.from({ length: numLeaves }, (_, i) => {
             const angle = (i / numLeaves) * Math.PI * 2;
@@ -55,3 +55,7 @@ const FlowerLeaves = ({ numLeaves = 14 }) => {
 };
 
 export default FlowerLeaves;
+//bevelsize - 0.3 to 0.9
+//bevelThickness - 0.1 to 0.9
+//const rotation 4th parameter can be mapped to only two numbers 3 and 4. it can be linked with bevelsize i think!
+//numpetals 1 to 15 :')

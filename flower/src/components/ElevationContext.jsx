@@ -13,3 +13,4 @@ export const ElevationProvider = ({ children }) => {
         </ElevationContext.Provider>
     );
 };
+// selin's notes: i connected blobs, caps and stipes height to the same variable, elevation change can be mapped between 3 - 9

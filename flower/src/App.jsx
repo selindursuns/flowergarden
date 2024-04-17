@@ -41,12 +41,27 @@ const Scene = () => {
   );
 };
 
+// const RotatingGroup = () => {
+//   const groupRef = useRef();
+//   useFrame(() => {
+//     if (groupRef.current) {
+//       groupRef.current.rotation.y += 0.001; 
+//       groupRef.current.rotation.x += 0.001; 
+//     }
+//   });
+
 const RotatingGroup = () => {
   const groupRef = useRef();
+
+  useEffect(() => {
+    if (groupRef.current) {
+      groupRef.current.rotation.x += Math.PI / 6; 
+    }
+  }, []);
+
   useFrame(() => {
     if (groupRef.current) {
-      // groupRef.current.rotation.y += 0.001; 
-      // groupRef.current.rotation.x += 0.001; 
+      groupRef.current.rotation.y += 0.003;  
     }
   });
 
@@ -87,3 +102,4 @@ const App = () => {
 }
 
 export default App;
+//not sure how they should move and rotate, please check the css file, i have additional movement info there. i was trying to not to show the bottom :') also this might need some adjustment if we don't want these avatars to overlap with each other

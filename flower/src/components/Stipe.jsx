@@ -20,11 +20,11 @@ const Stipe = () => {
 
     const { elevation } = useElevation();
 
-    const vSegments = 20;  // vertical resolution
-    const rSegments = 20;  // angular resolution
+    const vSegments = 20;  // vertical 
+    const rSegments = 20;  // angular 
     // const height = 5;
-    const baseRadius = 0.4;
-    const noise_c = 0.5;
+    const baseRadius = 0.2;
+    const noise_c = 0.4;
     const meshRef = useRef();
 
     const colors = ['purple', 'red', 'blue', 'green', 'yellow', 'orange'];
@@ -110,3 +110,7 @@ const Stipe = () => {
 };
 
 export default Stipe;
+//baseradius from 0.01 to 0.3
+//noise 0 to 0.5
+//height can be a cool parameter, from 2 to 8
+//

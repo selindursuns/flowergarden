@@ -19,8 +19,8 @@ const CapPetal = ({ position, rotation, bevelThickness }) => {
         steps: 2,
         depth: 0.02,
         bevelEnabled: true,
-        bevelThickness: 1,
-        bevelSize: 1,
+        bevelThickness: 0.4,
+        bevelSize: 0.5,
         bevelOffset: 0,
         bevelSegments: 100
     };
@@ -53,7 +53,7 @@ const CapPetal = ({ position, rotation, bevelThickness }) => {
 
 };
 
-const FlowerCap = ({ numPetals = 5}) => {
+const FlowerCap = ({ numPetals = 8}) => {
 
     const { elevation } = useElevation();
 
@@ -76,3 +76,10 @@ const FlowerCap = ({ numPetals = 5}) => {
 };
 
 export default FlowerCap;
+
+// selin's notes: things that can change are 
+// 1. bevelThickness -> from 0.3-4. 
+// 2. bevelSize -> 0.4 to 1. 
+// 3. in const petal function, const rotation = [Math.PI / 1, angle, 4]; the number 4 can be 3-4-5. these three numbers alter the shape really well! 
+// 4. also numpetals can change from 3-4 to 20! 
+// 5. aaand color if we want. color can be between neon yellow-neon pink-neon purple-neon green gradient only. and this can be the only color that changes. not necessary but keeping it here as an option. :) 
